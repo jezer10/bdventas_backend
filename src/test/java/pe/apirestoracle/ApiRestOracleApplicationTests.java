@@ -16,9 +16,14 @@ class ApiRestOracleApplicationTests {
 
 @Autowired
 PasswordEncoder passwordEncoder;
+@Autowired
+UsuarioDao usuarioDao;
+
 @Test
 void contextLoads() {
 	System.out.println(passwordEncoder.encode("123"));
+	System.out.println(usuarioDao.validarUsuario("dreyna"));
+
 }
 		
 }

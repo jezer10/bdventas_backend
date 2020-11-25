@@ -41,7 +41,7 @@ Gson gson =new Gson();
 		SqlParameterSource in = new MapSqlParameterSource().addValue("idrol", id);
         Map<String, Object> map= simpleJdbcCall.execute(in);	
          lista.add(map);*/
-		return jdbcTemplate.queryForList("SELECT *FROM roles");	
+		return jdbcTemplate.queryForList("SELECT * FROM roles");	
 	}
 
 @Override
